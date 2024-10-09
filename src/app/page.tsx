@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import Projects from "./components/Projects/Projects";
-
+import Icons from "./components/Icons/Icons";
 
 export default function Home() {
   return (
-   <div className="max-w-md p-5 mx-auto">
+   <div className="w-sm p-5 mx-auto">
     <header>
       <div className="nav">
         <nav>
@@ -32,12 +32,12 @@ export default function Home() {
           <div className="mx-auto text-center">
             <h1>Hi,my name is <span className="block font-bold">Oluwasemilore Bajomo</span></h1>
             <div className="flex gap-2 justify-center">
-              <Image src={`/github.svg`} width={20} height={20} alt="github"/>
-              <Image src={`/linkedin.svg`} width={20} height={20} alt="linkedin"/>
+             <Link href="https://github.com/Sbtech24"><Image src={`/github.svg`} width={20} height={20} alt="github"/> </Link>
+             <Link  href="https://www.linkedin.com/in/oluwasemilore-bajomo-3a7087247/"><Image src={`/linkedin.svg`} width={20} height={20} alt="linkedin"/></Link>
             </div>
           </div>
         </div>
-        <Image src={`/side-element.svg`} className="min-w-56 mx-auto" width={100} height={100} alt="side element"/>
+        <Image src={`/side-element.svg`} className="max-w-56 mx-auto" width={100} height={100} alt="side element"/>
       </div>
 
       <section className="bg-gray-200 min-w-full p-2">
@@ -46,13 +46,14 @@ export default function Home() {
         Eos perferendis, in quod ipsum iste repellat iusto veritatis similique eligendi at alias inventore error quisquam temporibus distinctio molestias provident beatae. Tempora iure autem quasi quo inventore, voluptas dignissimos? Harum?</p>
       </section>
 
-      <section>
+      <section className="my-3 ">
         <h2 className="font-bold text-xl">Specializations</h2>
+        <p className="my-2">Technologies I'm familiar with</p>
         <div>
-
+          <Icons/>
         </div>
 
-        <section>
+        <section className="my-3">
           <h2 className="font-bold text-xl">Projects</h2>
           <p>here are the projects I developed,prototyped or participated in </p>
           <div>
@@ -63,9 +64,18 @@ export default function Home() {
     </main>
 
     <footer className="flex flex-col justify-center w-full">
-      <a href="bajomosemilore@gmail.com" className="block">bajomosemilore@gmail.com</a>
-      <a href="https://github.com/Sbtech24" className="block">github.com/Sbtech24</a>
-      <a href="https://www.linkedin.com/in/oluwasemilore-bajomo-3a7087247/" className="block">Bajomo Oluwasemilore</a>
+      <div className="flex gap-1 items-center">
+        <Image src={`mail.svg`} width={20} height={20} alt="mail"/>
+        <a href="bajomosemilore@gmail.com" className="block">bajomosemilore@gmail.com</a>
+     </div>
+     <div className="flex gap-1 items-center">
+        <Image src={`/github.svg`} width={20} height={20} alt="github"/>
+        <a href="https://github.com/Sbtech24" className="block">github.com/Sbtech24</a>
+      </div>
+      <div className="flex gap-1 items-center">
+        <Image src={`/linkedin.svg`} width={20} height={20} alt="github"/>
+        <a href="https://www.linkedin.com/in/oluwasemilore-bajomo-3a7087247/" className="block">Bajomo Oluwasemilore</a>
+      </div>
     </footer>
    </div>
   );
