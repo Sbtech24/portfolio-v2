@@ -47,7 +47,7 @@ const Projects = () => {
     autoplaySpeed: 3000,
   };
   return (
-    <div>
+    <div className='py-6 my-2'>
       <Carousel items={projectData}/>
      </div>
    

@@ -75,6 +75,9 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  h2{
+    @apply text-3xl;
+  }
 }
 
 .circle{
