@@ -7,20 +7,20 @@ import { IconBrandJavascript,IconBrandTypescript,IconBrandReact,IconBrandMongodb
 const Icons = () => {
   return (
     <div className='flex flex-wrap gap-2'>
-    <IconBrandJavascript size={45}stroke={1} />
-    <IconBrandTypescript size={45} stroke={1} />
-    <IconBrandReact size={45} stroke={1} />
-    <IconBrandMongodb size={45} stroke={1} />
-    <IconBrandNextjs size={45} stroke={1} />
-    <IconBrandTailwind size={45} stroke={1} />
-    <IconBrandSass size={45} stroke={1} />
-    <IconBrandCss3 size={45}stroke={1} />
-    <IconBrandNodejs size={45} stroke={1}/>
-    <IconBrandWordpress size={45}  stroke={1} />
-    <IconBrandReactNative size={45}  stroke={1} />
-    <IconBrandBootstrap size={45}  stroke={1} />
-    <IconHtml size={45}stroke={1}/>
-    <IconBrandFirebase size={45}  stroke={1} />
+    <IconBrandJavascript size={40} stroke={1} />
+    <IconBrandTypescript size={40} stroke={1} />
+    <IconBrandReact size={40} stroke={1} />
+    <IconBrandMongodb size={40} stroke={1} />
+    <IconBrandNextjs size={40} stroke={1} />
+    <IconBrandTailwind size={40} stroke={1} />
+    <IconBrandSass size={40} stroke={1} />
+    <IconBrandCss3 size={40}stroke={1} />
+    <IconBrandNodejs size={40} stroke={1}/>
+    <IconBrandWordpress size={40}  stroke={1} />
+    <IconBrandReactNative size={40}  stroke={1} />
+    <IconBrandBootstrap size={40}  stroke={1} />
+    {/* <IconHtml size={40} stroke={1}/> */}
+    <IconBrandFirebase size={40}  stroke={1} />
     </div>
   )
 }

@@ -1,10 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from "next/link"
-import Slider,{Settings} from "react-slick"
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Carousel from '../Carousel/Carousel';
+import { ExternalLinkIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
 
 const Projects = () => {
   
@@ -15,7 +12,8 @@ const Projects = () => {
       name:"dev-Links",
       desc:"A Link sharing app for developers where developers",
       repo:"https://github.com/Sbtech24/dev-links",
-      liveDemo:""
+      liveDemo:"",
+      skills:["Typescript","React","Next js","Firbase"]
     },
 
     { 
@@ -24,7 +22,8 @@ const Projects = () => {
       name:"dictionary web-app",
       desc:"A dictionary web application where users can search words and get the meaning ",
       repo:"https://github.com/Sbtech24/Dictionary-web-app-",
-      liveDemo:"https://dictionary-web-app-liart.vercel.app/"
+      liveDemo:"https://dictionary-web-app-liart.vercel.app/",
+      skills:["Javascript","React","Dictionary API","Tailwind css"]
     },
 
     { 
@@ -33,22 +32,42 @@ const Projects = () => {
       name:"Countries app",
       desc:"A web app that displays set of countries and important facts gotten from a rest api ",
       repo:"https://github.com/Sbtech24/Countries",
-      liveDemo:"https://loreys-countries-info-app.vercel.app/"
+      liveDemo:"https://loreys-countries-info-app.vercel.app/",
+      skills:["Javascript","React","Country API","Tailwind css","Vite"]
     }
 
   ]
-  const settings: Settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  };
+ 
   return (
-    <div className='py-6 my-2'>
-      <Carousel items={projectData}/>
+    <div className='mt-3'>
+      <h3 className='font-bold'>Projects</h3>
+     {projectData.map((data)=>(
+      <>
+      <div className='bg-neutral-800 my-2 p-4'>
+        <div className='flex justify-between'>
+          <h5 className='capitalize'>{data.name}</h5>
+          <Link href={data.liveDemo} className='flex items-center gap-2'>
+            <ExternalLinkIcon/>
+          <p className='text-sm text-neutral-300'>External Link</p>
+          </Link>
+          
+        </div>
+        <div className='py-2'>
+        <p className='text-sm text-neutral-300 my-1'>{data.desc}</p>
+
+        <p className='text-sm text-neutral-300 my-1'>Skills I picked up</p>
+        </div>
+        <div>
+         {data.skills.map((element)=>(
+          <p className='text-xs inline text-wrap mx-1 text-neutral-500 bg-neutral-900 p-2'>{element}</p>
+
+         ))}
+         
+        </div>
+        {/* github logo  */}
+      </div>
+      </>
+     ))}
      </div>
    
   )
