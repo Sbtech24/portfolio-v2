@@ -9,7 +9,7 @@ const Header = () => {
                 <ul className='flex gap-2 py-4 Capitalize font-bold'>
                     <li><Link href="./">Home</Link></li>
                     <li><Link href="#projects">Projects</Link></li>
-                    <li><Link href="/contacts">Contact</Link></li>
+                    <li><Link href="/writing">Writings</Link></li>
                 </ul>
                 <SunIcon/>
             </div>

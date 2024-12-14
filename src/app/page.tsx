@@ -12,7 +12,7 @@ export default function Home() {
   const { setTheme } = useTheme();
 
   return (
-    <div className="max-w-xl mx-auto">
+    <div className="p-5 sm:max-w-xl mx-auto">
       <header>
         <Header />
       </header>
@@ -21,7 +21,7 @@ export default function Home() {
 
         <section className="my-5" id="specializations">
           <h3 className="font-bold ">Specializations</h3>
-          <p className="text-gray-500">Technologies I'm familiar with</p>
+          <p className="text-gray-500 text-base">Technologies I'm familiar with</p>
           <div>
             <Icons />
           </div>

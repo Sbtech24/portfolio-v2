@@ -57,9 +57,9 @@ const Projects = () => {
 
         <p className='text-sm text-neutral-300 my-1'>Skills I picked up</p>
         </div>
-        <div>
+        <div className='flex flex-wrap gap-2'>
          {data.skills.map((element)=>(
-          <p className='text-xs inline text-wrap mx-1 text-neutral-500 bg-neutral-900 p-2'>{element}</p>
+          <p className='text-xs mx-1 text-neutral-500 bg-neutral-900 p-2'>{element}</p>
 
          ))}
          
