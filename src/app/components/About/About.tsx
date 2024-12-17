@@ -7,7 +7,9 @@ const About = () => {
       <p className="text-base text-neutral-300 my-1 pt-4">
         Hello &#128075; my name is Bajomo Oluwasemilore. I am a software
         engineer base in Nigeria My current tech stack includes
-        <div className="inline">
+
+      </p>
+      <div className="inline">
             <span className="bg-neutral-800 p-1 inline-flex align-middle gap-1 mx-1 rounded-sm">
             <img src="./react-color.svg" width={20} className="inline" alt="" />
             React
@@ -25,8 +27,6 @@ const About = () => {
             Javascript
           </span>
         </div>
-      any other thing i find intresting.
-      </p>
 
       <p className="text-base text-neutral-300 my-1 pt-4">
       I am currently job hunting and I am open to entry level/Junior Frontend

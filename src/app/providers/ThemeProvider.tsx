@@ -1,64 +1,44 @@
 "use client"
-import { createContext, useContext, useEffect, useState } from "react"
+import { createContext,useContext, useEffect, useState } from "react"
 
 type Theme = "dark" | "light" 
 
-type ThemeProviderProps = {
-  children: React.ReactNode
-  defaultTheme?: Theme
-  storageKey?: string
+interface ThemeProviderProps {
+  children: React.ReactNode;
+  
 }
 
-type ThemeProviderState = {
-  theme: Theme
-  setTheme: (theme: Theme) => void
+interface ThemeProviderState  {
+  theme: Theme;
+  toggleTheme: ()=> void
+  
 }
 
 const initialState: ThemeProviderState = {
   theme: "light",
-  setTheme: () => null,
+  toggleTheme: ()=> null
 }
 
 const ThemeProviderContext = createContext<ThemeProviderState>(initialState)
 
-export function ThemeProvider({
-  children,
-  defaultTheme = "light",
-  storageKey = "vite-ui-theme",
-  ...props
-}: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>(
-    () => (localStorage.getItem(storageKey) as Theme) || defaultTheme
-  )
+export function ThemeProvider({children} : ThemeProviderProps) {
+  const [theme, setTheme] = useState<Theme>("dark")
 
-  useEffect(() => {
-    const root = window.document.documentElement
 
-    root.classList.remove("light", "dark")
-
-    if (theme === "light") {
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
-        .matches
-        ? "dark"
-        : "light"
-
-      root.classList.add(systemTheme)
-      return
-    }
-
-    root.classList.add(theme)
-  }, [theme])
-
-  const value = {
-    theme,
-    setTheme: (theme: Theme) => {
-      localStorage.setItem(storageKey, theme)
-      setTheme(theme)
-    },
+  const toggleTheme = ()=>{
+    setTheme((prev)=> prev =="light" ? "dark": "light")
   }
+  useEffect(() => {
+    // Apply the theme to the <html> tag
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [theme]);
 
   return (
-    <ThemeProviderContext.Provider {...props} value={value}>
+    <ThemeProviderContext.Provider value={{theme,toggleTheme}}>
       {children}
     </ThemeProviderContext.Provider>
   )
