@@ -1,7 +1,7 @@
 import React from 'react'
 import { IconBrandJavascript,IconBrandTypescript,IconBrandReact,IconBrandMongodb,
     IconBrandNextjs,IconBrandTailwind,IconBrandSass,IconBrandCss3,IconBrandNodejs,IconBrandWordpress,IconBrandReactNative,
-    IconBrandFirebase,IconHtml,IconBrandBootstrap
+    IconBrandFirebase,IconBrandBootstrap
   } from '@tabler/icons-react';
 
 const Icons = () => {

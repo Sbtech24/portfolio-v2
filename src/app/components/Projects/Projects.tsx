@@ -43,7 +43,7 @@ const Projects = () => {
       <h3 className='font-bold' id='projects'>Projects</h3>
      {projectData.map((data)=>(
       <>
-      <div className='bg-neutral-800 my-2 p-4'>
+      <div key={data.id} className='bg-neutral-800 my-2 p-4'>
         <div className='flex justify-between'>
           <h5 className='capitalize'>{data.name}</h5>
           <Link href={data.liveDemo} className='flex items-center gap-2'>
