@@ -1,15 +1,14 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
+
 import Projects from "./components/Projects/Projects";
 import Icons from "./components/Icons/Icons";
-import { useTheme } from "./providers/ThemeProvider";
+
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
 
 export default function Home() {
-  const { setTheme } = useTheme();
+  
 
   return (
     <div className="p-5 sm:max-w-xl mx-auto">
