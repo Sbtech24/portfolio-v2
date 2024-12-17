@@ -40,7 +40,7 @@ const Projects = () => {
  
   return (
     <div className='mt-3'>
-      <h3 className='font-bold'>Projects</h3>
+      <h3 className='font-bold' id='projects'>Projects</h3>
      {projectData.map((data)=>(
       <>
       <div className='bg-neutral-800 my-2 p-4'>
