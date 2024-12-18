@@ -43,23 +43,23 @@ const Projects = () => {
       <h3 className='font-bold' id='projects'>Projects</h3>
      {projectData.map((data)=>(
       <>
-      <div key={data.id} className='bg-neutral-800 my-2 p-4'>
+      <div key={data.id} className='ring-1 ring-neutral-200 bg-neutral-50 my-2 p-4 dark:bg-neutral-800 dark:ring-neutral-700'>
         <div className='flex justify-between'>
           <h5 className='capitalize'>{data.name}</h5>
           <Link href={data.liveDemo} className='flex items-center gap-2'>
             <ExternalLinkIcon/>
-          <p className='text-sm text-neutral-300'>External Link</p>
+          <p className='text-sm dark:text-neutral-300'>External Link</p>
           </Link>
           
         </div>
         <div className='py-2'>
-        <p className='text-sm text-neutral-300 my-1'>{data.desc}</p>
+        <p className='text-sm dark:text-neutral-300 my-1'>{data.desc}</p>
 
-        <p className='text-sm text-neutral-300 my-1'>Skills I picked up</p>
+        <p className='text-sm dark:text-neutral-300 my-1'>Skills I picked up</p>
         </div>
         <div className='flex flex-wrap gap-2'>
          {data.skills.map((element)=>(
-          <p className='text-xs mx-1 text-neutral-500 bg-neutral-900 p-2' key={element}>{element}</p>
+          <p className='text-xs mx-1 bg-white border-neutral-200 rounded ring-1 ring-neutral-200 text-neutral-500 dark:bg-neutral-900 dark:ring-neutral-700 p-2' key={element}>{element}</p>
 
          ))}
          

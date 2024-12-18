@@ -75,6 +75,7 @@ body {
   body {
     @apply bg-background text-foreground;
     font-size: 16px;
+    transition:300ms ease-in;
   }
   h2{
     @apply text-3xl;

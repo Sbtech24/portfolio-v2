@@ -1,7 +1,13 @@
-import React from 'react'
-import { SunIcon } from '@radix-ui/react-icons'
+import React,{useContext} from 'react'
+import { SunIcon,MoonIcon } from '@radix-ui/react-icons'
 import Link from 'next/link'
+import { ThemeProviderContext } from '@/app/providers/ThemeProvider'
+
+
 const Header = () => {
+
+  const {toggleTheme,theme} = useContext(ThemeProviderContext)
+
   return (
     <header>
         <nav>
@@ -11,7 +17,7 @@ const Header = () => {
                     <li><Link href="#projects">Projects</Link></li>
                     <li><Link href="/writing">Writings</Link></li>
                 </ul>
-                <SunIcon/>
+                {theme ==="light" ? <SunIcon onClick={toggleTheme}/>:<MoonIcon onClick={toggleTheme}/>}
             </div>
                 
             <div>
