@@ -6,7 +6,7 @@ const About = () => {
       <h3 className="font-bold pt-4">About me </h3>
       <p className="text-base my-1 pt-4 dark:text-neutral-300 ">
         Hello &#128075; my name is Bajomo Oluwasemilore. I am a software
-        engineer base in Nigeria My current tech stack includes
+        engineer based in Nigeria My current tech stack includes
 
       </p>
       <div className="inline">
