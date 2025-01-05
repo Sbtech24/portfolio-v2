@@ -12,7 +12,7 @@ const Projects = () => {
       name:"dev-Links",
       desc:"A Link sharing app for developers where developers",
       repo:"https://github.com/Sbtech24/dev-links",
-      liveDemo:"",
+      liveDemo:"https://github.com/Sbtech24/dev-links",
       skills:["Typescript","React","Next js","Firbase"]
     },
 

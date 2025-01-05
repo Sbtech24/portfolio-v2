@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/next';
 import { ThemeProvider } from "@/app/providers/ThemeProvider";
 
 const geistSans = localFont({
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <ThemeProvider >
           {children}
+          <Analytics/>
         </ThemeProvider>
       </body>
     </html>
