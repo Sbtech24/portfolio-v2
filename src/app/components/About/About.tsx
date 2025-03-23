@@ -28,10 +28,7 @@ const About = () => {
           </span>
         </div>
 
-      <p className="text-base my-1 pt-4 dark:text-neutral-300">
-      I am currently job hunting and I am open to entry level/Junior Software/Frontend 
-        developer roles.
-      </p>
+     
     </div>
   );
 };
