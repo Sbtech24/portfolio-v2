@@ -27,14 +27,14 @@ const About = () => {
             <img src="./javascript-color.svg" className="inline" width={15} alt="" />
             Javascript
           </span>
-          <span className="ring-1 ring-neutral-200 text-sm p-1 inline-flex bg-neutral-50 align-middle gap-1 mx-1 rounded-sm dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:ring-neutral-700">
+          {/* <span className="ring-1 ring-neutral-200 text-sm p-1 inline-flex bg-neutral-50 align-middle gap-1 mx-1 rounded-sm dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:ring-neutral-700">
             <img src="./nodejs.svg" className="inline" width={15} alt="" />
             Node Js
           </span>
           <span className="ring-1 ring-neutral-200 text-sm p-1 inline-flex bg-neutral-50 align-middle gap-1 mx-1 rounded-sm dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:ring-neutral-700">
             <img src="./express.svg" className="inline" width={15} alt="" />
             Express
-          </span>
+          </span> */}
         </div>
 
      
