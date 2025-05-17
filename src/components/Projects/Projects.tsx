@@ -40,12 +40,12 @@ const Projects = () => {
  
   return (
     <div className='mt-3'>
-      <h3 className='font-bold' id='projects'>Projects</h3>
+      <h3 className='font-bold text-2xl' id='projects'>Projects</h3>
      {projectData.map((data)=>(
       <>
       <div key={data.id} className='ring-1 ring-neutral-200 bg-neutral-50 my-2 p-4 dark:bg-neutral-800 dark:ring-neutral-700'>
         <div className='flex justify-between'>
-          <h5 className='capitalize'>{data.name}</h5>
+          <h5 className='capitalize text-xl'>{data.name}</h5>
           <Link href={data.liveDemo} className='flex items-center gap-2'>
             <ExternalLinkIcon/>
           <p className='text-sm dark:text-neutral-300'>External Link</p>
