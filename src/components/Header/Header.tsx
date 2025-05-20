@@ -12,11 +12,7 @@ const Header = () => {
     <header>
         <nav>
             <div className='flex items-center justify-between'>
-                <ul className='flex gap-2 py-4 Capitalize text-xl font-bold'>
-                    <li><Link href="./">Home</Link></li>
-                    <li><Link href="#projects">Projects</Link></li>
-                    <li><Link href="/writing">Writings</Link></li>
-                </ul>
+               <h1 className='font-semibold text-lg'>Hey &#128075;, i'm Semilore </h1>
                 {theme ==="light" ? <SunIcon onClick={toggleTheme}/>:<MoonIcon onClick={toggleTheme}/>}
             </div>
                 

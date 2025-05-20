@@ -13,7 +13,7 @@ const Projects = () => {
       desc:"A Link sharing app for developers where developers",
       repo:"https://github.com/Sbtech24/dev-links",
       liveDemo:"https://github.com/Sbtech24/dev-links",
-      skills:["Typescript","React","Next js","Firbase"]
+      skills:["Typescript","React","Next js","Firebase"]
     },
 
     { 
@@ -40,12 +40,12 @@ const Projects = () => {
  
   return (
     <div className='mt-3'>
-      <h3 className='font-bold text-2xl' id='projects'>Projects</h3>
+      <h3 className='font-semibold text-lg' id='projects'>Projects</h3>
      {projectData.map((data)=>(
       <>
       <div key={data.id} className='ring-1 ring-neutral-200 bg-neutral-50 my-2 p-4 dark:bg-neutral-800 dark:ring-neutral-700'>
         <div className='flex justify-between'>
-          <h5 className='capitalize text-xl'>{data.name}</h5>
+          <h5 className='capitalize text-base'>{data.name}</h5>
           <Link href={data.liveDemo} className='flex items-center gap-2'>
             <ExternalLinkIcon/>
           <p className='text-sm dark:text-neutral-300'>External Link</p>
