@@ -10,7 +10,7 @@ import Footer from "../components/Footer/Footer";
 export default function Home() {
 
   return (
-    <div className="p-5 flex flex-col gap-3 sm:max-w-xl mx-auto">
+    <div className="p-5 flex flex-col gap-1 sm:max-w-xl mx-auto">
       <header>
         <Header />
       </header>
