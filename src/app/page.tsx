@@ -51,10 +51,10 @@ export default function Home() {
               <Image src={about} alt="image-of-a dude" />
             </div>
 
-            <article className="sm:w-1/2">
+            <article className="sm:w-1/2 mt-2">
               <h2>About Me</h2>
 
-              <div className="space-y-4 text-[18px] text-zinc-500">
+              <div className="space-y-4 mt-2 text-[18px] text-zinc-500">
                 <p>
                   I'm a frontend-focused software engineer with a growing
                   passion for full-stack development. I enjoy building fast,
@@ -89,14 +89,14 @@ export default function Home() {
 
       {/* Footer section */}
       <footer className="bg-black text-white p-4 w-full text-xs rounded-md sm:text-sm">
-        <div className="flex justify-between gap-4 w-full">
+        <div className="flex flex-col justify-center sm:flex-row sm:justify-between gap-5 w-full">
           <div className="self-center">
                 <SocialLinks />
 
           </div>
        
 
-          <div className="flex gap-2 flex-col">
+          <div className="flex gap-2 flex-col justify-center">
             <small>@ 2024-2025</small>
             <small>Made with ❤️ from Lagos, Nigeria</small>
           </div>
