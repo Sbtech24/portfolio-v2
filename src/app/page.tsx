@@ -90,7 +90,11 @@ export default function Home() {
       {/* Footer section */}
       <footer className="bg-black text-white p-4 w-full text-xs rounded-md sm:text-sm">
         <div className="flex justify-between gap-4 w-full">
-          <p className="text-base self-center">Lorey</p>
+          <div className="self-center">
+                <SocialLinks />
+
+          </div>
+       
 
           <div className="flex gap-2 flex-col">
             <small>@ 2024-2025</small>

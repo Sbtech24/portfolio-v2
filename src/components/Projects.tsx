@@ -70,7 +70,7 @@ export default function ProjectsSection() {
           href="https://github.com/Sbtech24"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-white text-black font-medium px-6 py-3 rounded-md  hover:transition-colors"
+          className="inline-block bg-white text-black text-base font-medium px-6 py-3 rounded-md  hover:transition-colors"
         >
           Check out more projects on GitHub
         </Link>

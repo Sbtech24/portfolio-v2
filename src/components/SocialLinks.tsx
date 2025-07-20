@@ -31,7 +31,7 @@ export default function SocialLinks() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={name}
-          className="border-2 border-black p-1 rounded-md hover:bg-gray-100 transition"
+          className="border-2 border-black p-1 rounded-md hover:opacity-85 transition"
         >
           <Icon size={22} />
         </Link>
