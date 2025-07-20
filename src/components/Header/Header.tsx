@@ -17,7 +17,7 @@ const Header = () => {
             <div className='flex items-center justify-between'>
               <div className='flex gap-3 items-center'>
                 {theme ==="light" ? <SunIcon onClick={toggleTheme}/>:<MoonIcon onClick={toggleTheme}/>}
-                <h1>Lorey</h1>
+              
               </div>
            <ListIcon/>
 
@@ -33,7 +33,7 @@ const Header = () => {
             <div className='flex items-center justify-between'>
               <div className='flex gap-3 items-center cursor-pointer'>
                 {theme ==="light" ? <SunIcon onClick={toggleTheme}/>:<MoonIcon onClick={toggleTheme}/>}
-                <h1>Lorey</h1>
+               
               </div>
          
               <div>

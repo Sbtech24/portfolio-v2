@@ -42,7 +42,7 @@ export default function SkillsSection() {
         {skills.map(({ name, icon: Icon }) => (
           <div
             key={name}
-            className="w-28 h-28 bg-white border border-black flex flex-col items-center justify-center rounded-md shadow-sm"
+            className="w-28 h-28 bg-background border border-black hover:bg-black hover:border-white hover:text-white flex flex-col items-center justify-center rounded-md shadow-sm"
           >
             <Icon size={30} />
             <p className="mt-2 text-sm font-medium text-center">{name}</p>

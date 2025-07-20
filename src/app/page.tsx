@@ -3,6 +3,7 @@ import Image from "next/image";
 import { man, about } from "@/assets";
 import SocialLinks from "@/components/SocialLinks";
 import SkillsSection from "@/components/Skills";
+import ProjectsSection from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       <header>
         <Header />
       </header>
-      <main>
+      <main className="flex flex-col gap-4">
         {/* Hero section */}
         <section>
           <div className="flex flex-col gap-3 sm:flex-row-reverse sm:justify-center">
@@ -78,7 +79,9 @@ export default function Home() {
         </section>
 
         {/* Project section */}
-        <section></section>
+        <section>
+          <ProjectsSection/>
+        </section>
 
         {/* Contact section */}
         <section></section>
