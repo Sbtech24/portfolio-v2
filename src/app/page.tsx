@@ -22,7 +22,7 @@ export default function Home() {
             <div className="flex flex-col gap-4 self-center">
               <div>
                 <h1 className="text-xl font-light sm:text-3xl">
-                  Hello I’am{" "}
+                  Hello I’m{" "}
                   <span className="font-extrabold">Bajomo Semilore </span>{" "}
                   <br />
                   <span className="font-extrabold">
