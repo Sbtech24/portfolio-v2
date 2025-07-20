@@ -22,7 +22,7 @@ const initialState: ThemeProviderState = {
 export const ThemeProviderContext = createContext<ThemeProviderState>(initialState)
 
 export function ThemeProvider({children} : ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>("dark")
+  const [theme, setTheme] = useState<Theme>("light")
 
 
   const toggleTheme = ()=>{
