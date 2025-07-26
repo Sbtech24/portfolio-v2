@@ -17,7 +17,7 @@ const projects = [
     description:
       "WIP. A mini app that consumes the Unsplash API to show images. Built with Next, TypeScript, and Tailwind CSS",
     image: miniUnsplash,
-    link: "https://github.com/Sbtech24/mini-unsplash-app",
+    link: "https://mini-unsplash-app.vercel.app/",
   },
 ];
 
