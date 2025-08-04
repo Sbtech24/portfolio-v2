@@ -1,9 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
-import { dictionary, miniUnsplash } from "@/assets";
+import { dictionary, miniUnsplash,sunnyside } from "@/assets";
 
 const projects = [
+  {
+    id: 1,
+    title: "Sunnyside landing page ",
+    description: "Responsive website built with Html,Css and Javascript",
+    image: sunnyside,
+    link: "https://sb-sunnyside.netlify.app/",
+  },
   {
     id: 1,
     title: "Dictionary Web app",
