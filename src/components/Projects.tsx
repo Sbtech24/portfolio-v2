@@ -1,24 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
-import { dictionary, miniUnsplash,sunnyside } from "@/assets";
+import { dictionary, miniUnsplash,tag} from "@/assets";
 
 const projects = [
   {
     id: 1,
-    title: "Sunnyside landing page ",
-    description: "Responsive website built with Html,Css and Javascript",
-    image: sunnyside,
-    link: "https://sb-sunnyside.netlify.app/",
+    title: "Tag",
+    description: "Next js,Tailwind,gsap,motion,typescript",
+    image: tag,
+    link: "https://tag.transweeft.com/",
   },
-  {
-    id: 1,
-    title: "Dictionary Web app",
-    description: "A Dictionary web app built with React + Vite",
-    image: dictionary,
-    link: "https://dictionary-web-app-liart.vercel.app/",
-  },
-  {
+   {
     id: 2,
     title: "Mini-unsplash-app",
     description:
@@ -26,6 +19,14 @@ const projects = [
     image: miniUnsplash,
     link: "https://mini-unsplash-app.vercel.app/",
   },
+  {
+    id: 3,
+    title: "Dictionary Web app",
+    description: "A Dictionary web app built with React + Vite",
+    image: dictionary,
+    link: "https://dictionary-web-app-liart.vercel.app/",
+  },
+ 
 ];
 
 export default function ProjectsSection() {
@@ -48,6 +49,7 @@ export default function ProjectsSection() {
                 width={600}
                 height={400}
                 className="rounded-lg border border-gray-200 shadow-sm"
+                priority
               />
             </div>
             <div className="md:w-1/2 space-y-4">
