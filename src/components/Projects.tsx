@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
-import { dictionary, miniUnsplash,tag} from "@/assets";
+import { dictionary, miniUnsplash,tag,edTech} from "@/assets";
+
 
 const projects = [
   {
@@ -25,6 +26,13 @@ const projects = [
     description: "A Dictionary web app built with React + Vite",
     image: dictionary,
     link: "https://dictionary-web-app-liart.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "Youtube viewer tool",
+    description: "A quick tool I built for a frontend engineer test - React,React hook Form, Shadcn",
+    image: edTech,
+    link: "https://edtech-platform-nine.vercel.app/",
   },
  
 ];
