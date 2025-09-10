@@ -10,7 +10,7 @@ const projects = [
     title: "Tag",
     description: "Next js,Tailwind,gsap,motion,typescript",
     image: tag,
-    link: "https://tag.transweeft.com/",
+    link: "https://usetag.transweeft.com/",
   },
    {
     id: 2,
