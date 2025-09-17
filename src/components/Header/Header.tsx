@@ -74,10 +74,10 @@ const Header = () => {
 
           <div>
             <ul className="flex gap-5 items-center cursor-pointer">
-              <li>About me</li>
-              <li>Skills</li>
-              <li>Projects</li>
-              <li>Contact me</li>
+              <li><a href="#about">About me</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              {/* <li> <a href="#contact">Conta</a>Contact me</li> */}
             </ul>
           </div>
 

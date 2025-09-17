@@ -39,7 +39,7 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section className="py-16 bg-black text-white px-8">
+    <section className="py-16 bg-black text-white px-8 rounded-md">
       <h2 className="text-3xl font-bold text-center mb-12">My Projects</h2>
 
       <div className="space-y-12">

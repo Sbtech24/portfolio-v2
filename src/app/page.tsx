@@ -40,12 +40,12 @@ export default function Home() {
         </section>
 
         {/* My skills  */}
-        <section>
+        <section id="skills">
           <SkillsSection />
         </section>
 
         {/*About section*/}
-        <section>
+        <section id="about">
           <div className="sm:flex justify-between gap-8">
             <div >
               <Image src={about} alt="image-of-a dude" />
@@ -79,12 +79,12 @@ export default function Home() {
         </section>
 
         {/* Project section */}
-        <section>
+        <section id="projects">
           <ProjectsSection/>
         </section>
 
         {/* Contact section */}
-        <section></section>
+        {/* <section></section> */}
       </main>
 
       {/* Footer section */}
