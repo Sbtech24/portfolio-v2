@@ -8,7 +8,7 @@ const projects = [
   {
     id: 1,
     title: "Tag",
-    description: "Next js,Tailwind,gsap,motion,typescript",
+    description: "Built the landing page for useTag using - Next js,Tailwind,gsap,motion,typescript",
     image: tag,
     link: "https://usetag.transweeft.com/",
   },
@@ -16,7 +16,7 @@ const projects = [
     id: 2,
     title: "Mini-unsplash-app",
     description:
-      "WIP. A mini app that consumes the Unsplash API to show images. Built with Next, TypeScript, and Tailwind CSS",
+      "A mini app that consumes the Unsplash API to show images. Built with Next, TypeScript, and Tailwind CSS",
     image: miniUnsplash,
     link: "https://mini-unsplash-app.vercel.app/",
   },
@@ -27,14 +27,6 @@ const projects = [
     image: dictionary,
     link: "https://dictionary-web-app-liart.vercel.app/",
   },
-  {
-    id: 4,
-    title: "Youtube viewer tool",
-    description: "A quick tool I built for a frontend engineer test - React,React hook Form, Shadcn",
-    image: edTech,
-    link: "https://edtech-platform-nine.vercel.app/",
-  },
- 
 ];
 
 export default function ProjectsSection() {
