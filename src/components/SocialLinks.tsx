@@ -22,8 +22,9 @@ const socialData = [
 ];
 
 export default function SocialLinks() {
+  
   return (
-    <div className="flex gap-4">
+    <div className="flex justify-center gap-4 sm:justify-start">
       {socialData.map(({ name, link, icon: Icon }) => (
         <Link
           key={name}
