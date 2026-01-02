@@ -1,31 +1,34 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
-import { dictionary, miniUnsplash,tag,edTech} from "@/assets";
+import { JobTrackr, miniUnsplash,tag} from "@/assets";
 
 
 const projects = [
   {
     id: 1,
-    title: "Tag",
-    description: "Built the landing page for useTag using - Next js,Tailwind,gsap,motion,typescript",
-    image: tag,
-    link: "https://usetag.transweeft.com/",
-  },
-   {
-    id: 2,
     title: "Mini-unsplash-app",
     description:
       "A mini app that consumes the Unsplash API to show images. Built with Next, TypeScript, and Tailwind CSS",
     image: miniUnsplash,
     link: "https://mini-unsplash-app.vercel.app/",
   },
+ 
+   {
+    id: 2,
+    title: "JobTrackr",
+    description:
+      "A Job tracking web application that helps people track and manage their job applications in a more efficient way - Currently under contruction 🚧. Next js ,tailwind css, typescript, Recharts"
+      ,
+    image: JobTrackr,
+    link: "https://github.com/Sbtech24/jobTrackr",
+  },
   {
     id: 3,
-    title: "Dictionary Web app",
-    description: "A Dictionary web app built with React + Vite",
-    image: dictionary,
-    link: "https://dictionary-web-app-liart.vercel.app/",
+    title: "Tag",
+    description: "Built the landing page for useTag using - Next js,Tailwind,gsap,motion,typescript",
+    image: tag,
+    link: "https://usetag.transweeft.com/",
   },
 ];
 
