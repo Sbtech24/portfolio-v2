@@ -87,8 +87,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold mb-2">About Me</h2>
             <div className="space-y-4 mt-2 text-[18px] text-zinc-500">
               <p>
-                I'm a frontend-focused software engineer with a growing
-                passion for full-stack development. I enjoy building fast,
+                I'm a software engineer passionate about building fast,
                 accessible, and visually polished web applications using modern
                 tools like React, Next.js, TypeScript, and Tailwind CSS.
               </p>
