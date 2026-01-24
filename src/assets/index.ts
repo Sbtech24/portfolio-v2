@@ -6,5 +6,6 @@ import sunnyside from "./sunnyside.png"
 import tag from "./tag.png"
 import JobTrackr from "./jobTrackr.png"
 import walletService from "./Wallet-service.png"
+import reaApi from "./ReaApi.png"
 
-export {man,about,dictionary,miniUnsplash,sunnyside,tag,JobTrackr,walletService}
+export {man,about,dictionary,miniUnsplash,sunnyside,tag,JobTrackr,walletService,reaApi}

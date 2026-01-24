@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
-import { JobTrackr, miniUnsplash, tag, walletService } from "@/assets";
+import { JobTrackr, miniUnsplash, reaApi, tag, walletService } from "@/assets";
 
 const projects = [
   {
@@ -14,6 +14,14 @@ const projects = [
   },
   {
     id: 2,
+    title: "Rea interactive bible  ",
+    description:
+      "Rea is an interactive Artificial intelligence bible app , helping christians draw closer to God. I contributed to the backend of our mobile app together with a team of other developers . Tech stack used - Nest,Postgres,Typescript,Google Gemini Api",
+    image: reaApi,
+    link: "https://api.staging.reabible.app/api/v1/docs",
+  },
+  {
+    id: 3,
     title: "Mini-unsplash-app",
     description:
       "A lightweight image gallery application that consumes the Unsplash API to fetch and display high-quality images. Built with Next.js, TypeScript, and Tailwind CSS, with a focus on responsive UI and efficient data fetching.",
@@ -22,12 +30,12 @@ const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "JobTrackr",
     description:
       "A Job tracking web application that helps people track and manage their job applications in a more efficient way - Currently under contruction 🚧. Next js ,tailwind css, typescript, Recharts and Node/Express, Postgres on the Backend",
     image: JobTrackr,
-    link: "https://github.com/Sbtech24/jobTrackr",
+    link: "https://job-trackr-nu.vercel.app/",
   },
   // {
   //   id: 3,
