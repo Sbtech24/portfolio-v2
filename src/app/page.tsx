@@ -7,6 +7,7 @@ import { man, about } from "@/assets";
 import SocialLinks from "@/components/SocialLinks";
 import SkillsSection from "@/components/Skills";
 import ProjectsSection from "@/components/Projects";
+import VisitorLocation from "@/components/VisitorLocation";
 
 export default function Home() {
   return (
@@ -105,6 +106,16 @@ export default function Home() {
             </div>
           </motion.article>
         </section>
+
+        <motion.section
+          id="visitor-location"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <VisitorLocation />
+        </motion.section>
 
         {/* 🚀 Projects Section */}
         <motion.section

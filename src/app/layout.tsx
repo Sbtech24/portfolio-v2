@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 
 import {Inter} from "next/font/google"
+// @ts-ignore: Allow side-effect import of global CSS in Next.js app directory
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/next';
 import { ThemeProvider } from "@/app/providers/ThemeProvider";
